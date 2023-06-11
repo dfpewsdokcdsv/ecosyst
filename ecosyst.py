@@ -26,12 +26,16 @@ async def ecosystem(ctx):
 
 @bot.command()
 async def howtodo(ctx):
+    howtodoye = os.listdir('recomenda')
+    howtudo = random.choice()
     await ctx.send(f'1. Найди людное место и попробуй поискать мусора. Не забудь взять пакет! 2. Попробуй пойти вместе со своими друзьями.',
                   f'Вместе интересней.' ,
                   f'3. Если вы найдете какие-нибудь батарейки, несите их на переработку.')
                   
 @bot.command()
 async def about(ctx):
+    about = os.listdir('facts')
+    abut = random.choice()
     await ctx.send(f'Железная банка - 10 лет' ,
 f'синтетическая одежда - 30-40 лет',
 f'жестяная банка - до 90 лет' ,
